@@ -6,7 +6,7 @@ None 3:
 # Planned Features
 ## Top Priority: Blog
 - A place for me and my close friends to talk about whatever.
-- You may only ask to add to the blog if:
+- You may only ask to add to the blog (once it's ready) if:
   - I have you added on Discord, and
   - you're good friends with me :3
 ## High Priority: Resource Hub
