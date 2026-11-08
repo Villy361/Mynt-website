@@ -1,13 +1,18 @@
-num1 = 0
-num2 = 0
+rolledNum = 0
 
 function ButtonClicked(){
-    num1 = Math.ceil(Math.random() * 25)
-    for (let i = 0; i < num1; i++) {
-        Math.random()
+    rolledNum = Math.floor(Math.random() * 1000)
+    document.getElementById("num").innerText = clamp3(rolledNum)
+}
+
+function clamp3(number) {
+    if (number < 10) {
+        return "00".concat(number)
+    } else if (number < 100) {
+        return "0".concat(number)
+    } else {
+        return "".concat(number)
     }
-    num2 = Math.floor(Math.random() * 100000)
-    document.getElementById("num").innerText = clamp5(num2)
 }
 
 function clamp5(number) {
