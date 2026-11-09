@@ -3,7 +3,7 @@ body{
     font-family: serif;
     color: dimgray;
 }
-#num {
-    font-family: monospace;
+.rollStats {
+    font-family: serif;
     color: black;
 }

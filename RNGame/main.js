@@ -1,9 +1,18 @@
 rolledNum = -1
 rollList = []
+totalRolls = 0
+rollScore = 0
+totalScore = 0
 
 function ButtonClicked() {
+    totalRolls++
     rolledNum = Math.floor(Math.random() * 1000)
-    document.getElementById("num").innerText = clamp(rolledNum)
+    rollScore = scoreRoll(rolledNum)
+    totalScore += rollScore
+    document.getElementById("roll").innerText = clamp(rolledNum)
+    document.getElementById("rTotal").innerText = totalRolls
+    document.getElementById("pRoll").innerText = rollScore
+    document.getElementById("pTotal").innerText = totalScore
     insertRoll(rolledNum)
 }
 
@@ -18,7 +27,7 @@ function insertRoll(toAdd) {
     rollList = temp
     for (let index = 1; index < rollList.length; index++) {
         roll = rollList[index];
-        document.getElementById("" + (index)).innerText = clamp(roll)
+        document.getElementById("n" + (index)).innerText = clamp(roll)
     }
 }
 

@@ -10,22 +10,29 @@
         <section>
             <h2>RNGame!</h2>
             <button onclick="ButtonClicked()">Get a random number!</button>
-            <p>Your number is: <span id="num"></span> :3</p>
+            <p>Your number is: <span id="roll" class="rollStats">-</span> :3</p>
+            <p>Total Numbers: <span id="rTotal" class="rollStats">0</span></p>
         </section>
         <section>
-            <h3>Previous Rolls:</h3>
+            <h4>Points (Unfinished)</h4>
+            <p>This Number: <span id="pRoll" class="rollStats">-</span></p>
+            <p>This Session: <span id="pTotal" class="rollStats">-</span></p>
+        </section>
+        <section>
+            <h3>Previous Numbers:</h3>
             <ol id="prevRolls">
-                <li id="1">-</li>
-                <li id="2">-</li>
-                <li id="3">-</li>
-                <li id="4">-</li>
-                <li id="5">-</li>
-                <li id="6">-</li>
-                <li id="7">-</li>
-                <li id="8">-</li>
-                <li id="9">-</li>
+                <li id="n1" class="rollStats">-</li>
+                <li id="n2" class="rollStats">-</li>
+                <li id="n3" class="rollStats">-</li>
+                <li id="n4" class="rollStats">-</li>
+                <li id="n5" class="rollStats">-</li>
+                <li id="n6" class="rollStats">-</li>
+                <li id="n7" class="rollStats">-</li>
+                <li id="n8" class="rollStats">-</li>
+                <li id="n9" class="rollStats">-</li>
             </ol>
         </section>
-        <script src="script-main.js"></script>
+        <script src="main.js"></script>
+        <script src="scoreRoll.js"></script>
     </body>
 </html>
